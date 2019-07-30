@@ -1,0 +1,30 @@
+//colors 
+$main-color: #2b2b2b;
+$yellow: yellow;
+$grey: grey;
+$font-colorW: white;
+$font-colorB: black;
+
+$input-shadow: rgb(153, 180, 240);
+$wrapper-shadow: rgb(116, 116, 116);
+$color-iconLink: rgb(143, 143, 143);
+
+$btn-search-hover: rgb(238, 238, 238);
+$main-article-btnBgc: rgba(255, 254, 254, 0.226);
+
+$article-list-bgc: rgba(161, 184, 199, 0.548);
+
+//fonts map
+$fonts : (
+  special-font: 'pt sans', 'roboto', arial, sans-serif,
+  default-font: arial, sans-serif,
+);
+
+// size of screen breakpoints
+$breakpoints : (
+  xsmall: (max-width: 400px),
+  small: (max-width: 500px),
+  medium: (max-width: 650px),
+  large: (max-width: 799px),
+  xlarge: (max-width: 1023px)
+)

@@ -1,0 +1,35 @@
+//mixins
+@mixin reset{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin btnHover($color: null, $bgcColor: null) {
+  background-color: $bgcColor;
+  color: $color;
+}
+
+@mixin mq($breakpoint){
+  $size : map-get($breakpoints, $breakpoint);
+  @if($size){
+    @media($size){
+      @content
+    }
+  }
+  @else{
+    @error '"#{breakpoint}" - nie rozpoznana wielkoćć breakpointu';
+  }
+}
+
+@mixin box-margin($top: 0, $right: $top, $bottom: $top, $left: $right){
+  @if($top != $bottom or $right != $left){
+    margin: $top $right $bottom $left
+  }
+  @else if($top == $bottom and $right == $left and $top == $left){
+    margin: $top;
+  }
+  @else {
+    margin: $top $right;
+  }
+}
